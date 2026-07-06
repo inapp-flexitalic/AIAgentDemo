@@ -14,7 +14,7 @@ public class EngineeringAgent
         var jiraResponse =
             await _jira.CreateTicketAsync(
                 goal,
-                "Created automatically by AI Agent");
+                "created automatically by AI Agent");
 
         var doc = JsonDocument.Parse(jiraResponse);
 
